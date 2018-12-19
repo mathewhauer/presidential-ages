@@ -6,9 +6,8 @@ This folder contains all scripts necessary to replicate these population project
 
 `/001-LoadCleanData.R` - is a simple R script used to downloadand clean the data.
 
-`/002-Analysis.R` - contains the script necessary to generate `sample-data.txt`. It also contains all of the post-processing of the underlying population estimates for use in the out-of-sample validation.
+`/010-Figure.R` - contains the script necessary to generate the primary visualization.
 
-`/003-SampleFunction.R` - contains an example script necessary to generate part of the analysis. 
 
 # Correspondence
 For any issues with the functionality of the script please create an issue.

@@ -1,8 +1,8 @@
 # Organization
 
-No data is natively housed within this folder. In order to generate data, please run the scripts located in the `SCRIPTS` folder. After scripts are run, this folder will be populated with the following datasets:
+This folder contains the following datasets:
 
-`raw-data-file.txt` - contains the raw data for underlying the analysis.
+`presidents.xlsx` - contains the raw data for underlying the analysis.
 
 # Correspondence
 For any issues with the functionality of the script please create an issue.
