@@ -1,5 +1,5 @@
 # Introduction
-Here I provide the code for:  [**Sociology, Demography, and Economics Presidential Ages and Sex over time**](https://github.com/mathewhauer/presidential-ages/blob/master/maintext.pdf)
+Here I provide the code for:  [**Sociology, Demography, and Economics Presidential Ages and Sex over time**](https://github.com/mathewhauer/presidential-ages/blob/master/manuscript.pdf)
 
 ### Citation
 
