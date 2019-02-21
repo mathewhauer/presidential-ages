@@ -8,6 +8,8 @@ Here I provide the code for:  [**Sociology, Demography, and Economics Presidenti
 
 
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mathewhauer/presidential-ages/master?urlpath=rstudio)
+
 # Abstract
 
 I provide a visualization of Presidential ages and gender over time for three academic associations: the American Sociological Association (ASA), the Population Association of America (PAA), and the American Economic Association (AEA). The figure reveals important trends in the 20th century concerning 1) the continued aging of association presidents, 2) the relatively recent increasing gender parity in association presidents of ASA and PAA but not AEA, and 3) the sharp increase in PAA presidential ages beginning near the turn of the 21st century.
