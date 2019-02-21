@@ -1,0 +1,44 @@
+---
+title: "Sociology, Demography, and Economics Presidential Ages and Sex over time"
+author: "Mathew E. Hauer"
+date: 2015-02-21
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr) 
+library(tidyverse)
+library(data.table) 
+library(openxlsx)
+library(cowplot)
+library(IDPmisc)
+library(ggrepel)
+library(lemon)
+library(scales) 
+
+read_chunk('SCRIPTS/001-LoadCleanData.R')
+read_chunk('SCRIPTS/010-Figure.R')
+```
+
+```{r LoadCleanData, include = FALSE}
+```
+
+Aging in the United States and the world is a well-documented phenomenon with the United State's population aged 65 and older expected to comprise nearly a quarter of the US population in 2060 [@vespa2018demographic]. Diversity in the professoriate is typically discussed via intersections of race, ethnicity, and gender [@leggon2010diversifying], but rarely is aging discussed despite its long-documented discussion  [@baldwin1984changing]. I build a database of academic association presidents for the American Sociological Association, American Economic Association, and Population Association of America to visualize the aging of association presidents. I prominently include sex in the analysis to additionally visualize the relationship between presidential ages and sex.
+
+\autoref{figure1} shows the trend in presidential ages over time for the ASA, AEA, and PAA and reveals interesting patterns of association leadership since the 1880s. 1) Since the 1940s, economic presidents are approximately five years older than sociology presidents while exhibiting a nearly linear increase in average age over time. 2) Sociology presidential ages demonstrate a non-linear trend in the 20th century, with presidents getting younger until the 1940s before aging at a similar pace as economists. 3) Demography presidents have tended to be considerably younger than both sociology and economic presidents, though PAA presidents have aged considerably since the year 2000, approaching parity with the ASA only recently.
+
+I've also included sex to see how the trends of aging coincide with increasing presidential gender diversity. The first female presidents for ASA and PAA appear almost simultaneously in the early 1950s, but female association presidents for ASA and PAA were still relatively rare until the mid-1980s. AEA's first female president is elected in 1986 -- 30 years after the first female president of ASA (Dorothy S. Thomas; 1952) or PAA (Irene B. Taeuber; 1953). Female presidents of PAA are typically much younger than female presidents of either ASA or AEA, however female presidential ages between PAA and ASA began converging after year 2000 (**Figure 1b**).
+
+The figure also shows the youngest presidents elected for each sex, further exemplifying the aging of association presidents. The most recent "youngest" president for any association is Anne R. Pebley of PAA in 1998 (age 46), 20 years ago. Douglas S. Massey is the last association president under the age of 50 (ASA, 2001). Conversely, there are seven association presidents over the age of 70 since the year 2008.
+
+Given the remarkably sustained pace of aging in association presidents, I see no real reason why this trend will abate. Do young academics lack the credentials of previous generations; is the age composition of association membership aging along with their presidents; are associations putting forth ever older candidates for presidency? These are important questions raised by this figure.
+
+The male-dominated presidential history of these associations is evident in the number and percentage of presidents who are women. The overwhelming majority of female presidents occur after 1980 (35 of the 41 female presidents), bringing much-needed gender parity to at least Sociology and Demography. Does this shift reflect the slow erosion of patriarchy in Sociology and Demography? Why has this shift not occurred in Economics? What changes -- both structurally and individually -- helped drive this change and can they be replicated to erode systemic racism the academy?
+
+The plot was produced using R and ggplot [@rcite; @ggplotcite]. Data and code to fully reproduce the plots are available in the Supplementary Materials.
+
+```{r Figure, echo=FALSE, message = FALSE, warning = FALSE, fig.height= 7.5, fig.path = "FIGURES/", dev = c("pdf", "png"), dpi =  300, fig.cap=paste("**Presidential Ages for AEA, ASA, and PAA.** This figure shows the trends in presidential ages. Points represent the age of a president at the start of their term colored by association with the shape determined by sex for both men and women (a) and isolated for just women in each association (b). The labeled names indicate the  youngest male and female presidents elected to each association along with their presidential year in parentheses and their age in that year. The trends in presidential age over time are represented with the colored lines and their associated standard error using a LOESS (span=1). The text in the top-left corner report the number and % of presidents who are female for each association. (b) also includes the trend for men for each association in gray. \\label{figure1}")}
+
+```
+
+# References
