@@ -46,13 +46,18 @@ header-includes:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(knitr)
-read_chunk('SCRIPTS/000-Libraries.R')
+p_load(knitr, 
+       tidyverse, 
+       data.table, 
+       openxlsx,
+       cowplot,
+       IDPmisc,
+       ggrepel,
+       lemon,
+       scales) 
+
 read_chunk('SCRIPTS/001-LoadCleanData.R')
 read_chunk('SCRIPTS/010-Figure.R')
-```
-
-```{r libraries, include=FALSE}
 ```
 
 ```{r LoadCleanData, include = FALSE}

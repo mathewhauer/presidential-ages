@@ -9,7 +9,12 @@ pkgs <- c(
   "cowplot",       # Plot Grids
   "IDPmisc",       # Quality na.rm
   "ggrepel",       # Repel Labels
-  "lemon"          # Axis manipulation
+  "lemon",          # Axis manipulation
+  "knitr",
+  "caTools",
+  "rmarkdown",
+  "rprojroot",
+  "pacman"
 )
 
 install.packages(pkgs)
